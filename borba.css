@@ -1,0 +1,1048 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#eee ;
+    font-family: arial;
+    font-weight: 400;
+    font-size: 13px;
+    border-top: 3px solid #d80700;
+    display: flex;
+    justify-content: center;
+}
+.cont{
+    background-color: white;
+    width:1170px;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:100;
+}
+.top a{
+    background-color: #d80700;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    
+}
+.naslov{
+    padding:20px 24px;
+    display: flex;
+   
+}
+.nav{
+    height:48px;
+   
+    display: flex;
+    position:relative;
+}
+
+.first{
+    display: flex;
+    list-style: none;
+    border-top:1px solid #eee;
+    border-bottom:3px solid #eee;
+    width:100%;
+    font-size: 18px;
+    margin: 0px 24px;
+}
+.first .prva{
+    font:16px;
+    display: flex;
+    justify-content: stretch; 
+}
+.first li a{
+    padding:0px 12px;
+}
+
+.first li a:hover{
+    border-bottom:3px solid #d80700;
+    margin-bottom: -3px;
+    color:#d80700;
+}
+.first li a .fa-chevron-down{
+    font-size: 6px;
+    margin:0 0 0 6px;
+}
+.lupa{
+    position:absolute;
+    right:34px;
+    top:16px;
+    font:16px;
+    
+    display:flex;
+}
+
+
+
+a{
+    color:#444444;
+    text-decoration: none;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.politika,.right, .more{
+    display: none;
+}
+/*===================More*/
+.more{
+    display: none;
+    flex-direction:column;
+    background-color:white;
+    position:absolute;
+    top:48px;
+   z-index: 10;
+    width:200px;
+    font-size:18px;
+}
+.first .more .more-sport{
+    display:none;
+}
+.first .more .more-kolumna{
+    display:none;
+}
+.more li{
+    padding:5px;
+    display: flex;
+    justify-content: left;
+}
+.more li a{
+    display:flex;
+    justify-content: left;
+}
+.more li:hover{
+    background-color: #d80700;
+}
+.more li:hover a{
+    color:white;
+}
+.vise:hover .more{
+    display:flex;
+}
+@media(max-width:1035px){
+    .first .sport{
+        display:none;
+    }
+    .first .more .more-sport{
+        display:flex;
+    }
+}
+@media(max-width:960px){
+    .first .kolumna{
+        display:none;
+    }
+    .first .more .more-kolumna{
+        display:flex;
+    }
+}
+
+/*===================Drugi i treci i...*/
+.second{
+    
+    position:absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    height:100%;
+    
+    background:white;
+    width:100%;
+    
+}
+.second li{
+    
+    display:flex;
+    
+    width:100%;
+    text-align: left;
+}
+.second li a{
+    display: flex;
+    padding-left:20px;
+    width:100%;
+    justify-content: left;
+    padding-top:20px;
+}
+
+.r-sve .jedan{
+    background-image:url(https://borba.me/wp-content/uploads/2021/01/Milo-%C4%90ukanovi%C4%87.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.r-sve .dva{
+    background-image:url(https://borba.me/wp-content/uploads/2021/01/Ilustracija-URA.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.r-sve .tri{
+    background-image:url(https://borba.me/wp-content/uploads/2021/01/Milo-Djukanovic-Kongres-DPS-foto-Antena-M-750x430.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.r-srbija .jedan{
+    background-image: url(https://borba.me/wp-content/uploads/2020/01/45F19452-DA36-478B-B1BC-13B270368E86.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.r-srbija .dva{
+    background-image: url(https://borba.me/wp-content/uploads/2018/01/B5AA5E40-0850-46D3-BBBE-5E3026994CC6.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.r-crna-gora .jedan{
+    background-image:url(https://borba.me/wp-content/uploads/2020/04/C7337777-B09C-4691-9B1B-E08075292AD4-scaled.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.r-crna-gora .dva{
+    background-image:url(https://borba.me/wp-content/uploads/2021/02/Lekic-Veber-1000x555-1-750x430.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.r-crna-gora .tri{
+    background-image:url(https://borba.me/wp-content/uploads/2021/02/Aleksandar-Stijovic-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.r-rs .jedan{
+    background-image:url(https://borba.me/wp-content/uploads/2020/02/E28C734A-3D23-42CB-AB31-C1EB1B0A3995.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.r-rs .dva{
+    background-image:url(https://borba.me/wp-content/uploads/2018/02/CBCDE6B6-EB17-441A-89B1-0FC817DC76D3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.r-rs .tri{
+    background-image:url(https://borba.me/wp-content/uploads/2018/01/68D63785-5570-4F8B-BD72-E5C35F735D5E.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.second li:hover a{
+    border:none;
+    margin-bottom:0;
+    
+}
+.third li:hover a{
+    border:none;
+    margin-bottom:0;
+    
+}
+.third li:hover a .dolje h5{
+  color:#d80700;
+    
+}
+
+
+.third{
+    width:100%;
+    display: flex;
+    height:100%;
+    padding:10px;
+}
+
+.third li{
+    width:30%;
+    display: flex;
+    height:100%; 
+    margin:10px;
+    position:relative;
+}
+ .third .gore{
+    position:absolute;
+    top:0;
+    left:0;
+    background: #d80700;
+    color:white;
+    padding:5px 10px;
+}
+ .third .dolje{
+    position:absolute;
+    bottom:0;
+    height:30%;
+    width:100%;
+    left:0;
+    background-color: white;
+    color:black;
+    padding:5px 10px;
+    
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.politika{
+    
+    position:absolute;
+    height:270px;
+    
+    top:48px;
+    left:0;
+    width:100vw;
+    z-index:10;
+}
+@media(min-width:1170px){
+    .politika{
+        width:1170px;
+        
+        left:0px;
+    }
+}
+.left{
+    flex-direction: column;
+    align-items: flex-start;
+    height:100%;
+   width:25%;
+    background:white;
+    flex:1;
+}
+.right{
+    flex:5;
+    position: absolute;
+   height:100%;
+    display: flex;
+    left:25%;
+    width:75%;
+    background-color: white;
+}
+.r-srbija{
+    top:0px;
+    z-index:-1;
+}
+.r-crna-gora{
+    top:0px;
+    z-index:-2;
+}
+.r-rs{
+    top:0px;
+    z-index:-3;
+}
+.r-sve{
+    position: absolute;
+    flex:5;
+    display: flex;
+    left:25%;
+    width:75%;
+    height:100%;
+    top:0px;
+}
+/*=====================================DRUGI*/
+.first li:hover .politika{
+    display:flex;
+}
+/* .first .politika .srbija:hover + .first .politika .r-sve{
+    display:none;
+} */
+.srbija:hover + .r-srbija{
+    z-index:11;
+}
+.crnagora:hover + .r-crna-gora{
+    z-index:11;
+}
+.rs:hover + .r-rs{
+    z-index:11;
+}
+/*==========================================SADRZAJ*/
+.sadrzaj{
+    display: flex;
+    flex-direction: column;
+}
+.slike{
+    display: flex;
+    height:400px;
+    margin-top:60px;
+    padding:0px 24px;
+}
+
+.slike div:hover{
+    
+    background-size:150%;
+   
+}
+.slika-1, .slika-2, .slika-3, .slika-4 a{
+height:100%;
+width:100%;
+position:relative;
+}
+.slika-1 a .dolje h3{
+    position:absolute;
+    font-size:24px;
+    color:white;
+    bottom:15px;
+    left:15px;
+}
+
+.slika-2 a .dolje h3{
+    position:absolute;
+    font-size:24px;
+    color:white;
+    bottom:10px;
+    left:10px;
+}
+.slika-3 a .dolje h3{
+    position:absolute;
+    font-size:18px;
+    color:white;
+    bottom:10px;
+    left:10px;
+}
+.slika-4 a .dolje h3{
+    position:absolute;
+    font-size:18px;
+    color:white;
+    bottom:10px;
+    left:10px;
+}
+.slika-1 a .gore h5{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #d80700;
+    color:white;
+    padding:5px;
+}
+.slika-2 a .gore h5{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #d80700;
+    color:white;
+    padding:5px;
+}
+
+.slike-234{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height:100%;
+}
+.slike-34{
+    display: flex;
+    height:50%;
+    
+}
+.slika-1{
+    background-image:url(https://borba.me/wp-content/uploads/2021/01/Aleksandar-Vucic-7-1-750x430.jpg) ;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    flex:1;
+    margin:1px;
+    transition:background-size 0.9s linear;
+    display: flex;
+    flex-direction: column;
+}
+.slika-2{
+    background-image:url(https://borba.me/wp-content/uploads/2021/02/mandic-i-knezevic-1-658x430.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height:50%;
+    flex:1;
+    margin:1px;
+}
+.slika-3{
+    background-image:url(https://borba.me/wp-content/uploads/2021/02/sanja-damjanovic-750x430.jpg) ;
+    background-position: center;
+    background-size: cover;
+  height:100%;
+  flex:1;
+  margin:1px;
+}
+.slika-4{
+    background-image: url(https://borba.me/wp-content/uploads/2021/02/Milos-Konatar-URA-750x430.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    flex:1;
+    margin:1px;
+}
+/*====================================NAASLOVI*/
+.naslov-head{
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    
+    padding:0;
+}
+.naslov-iznad{
+    margin-bottom: 20px;
+}
+.naslov-head a img{
+    width:100%;
+    height:100%;
+}
+.naslov-head a{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    justify-content: start;
+}
+.naslov-head .gore h5{
+background-color: #d80700;
+color:white;
+padding:5px;
+}
+.naslov-head .gore{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.naslov-head .dolje h5{
+    font-size:18px;
+    padding:5px 0;
+   
+}
+.naslov-head .dolje {
+    position:static;
+}
+.naslov-under .under-text h5{
+ font-size: 14px;
+}
+.naslovi{
+    width:100%;
+    padding:24px;
+    display: flex;
+    justify-content: space-between;
+}
+.naslov-1{
+    width:31%;
+}
+.naslov-iznad{
+    display:flex;
+    align-items: center;
+}
+.naslov-iznad h4{
+    padding:5px;
+    color:red;
+    font-size:16px;
+}
+.naslov-iznad .crta{
+    width:100%;
+    left:0;
+    
+    height:5px;
+    background-color: #d80700;
+}
+.naslov-under{
+    display:flex;
+    margin:5px 0;
+}
+.naslov-under img{
+    width:150px;
+    height:85px;
+    margin-right:10px;
+}
+/*=========================drustvo*/
+.drustvo{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color:#007cba ;
+}
+.pad{
+    padding-top:13%;
+    height: 100%;
+}
+.drustvo-iznad{
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding:40px 24px;
+}
+.drustvo-iznad h3{
+    color:#d80700;
+    background-color: white;
+    padding-right:10px;
+}
+.drustvo-iznad .crta{
+    height: 4px;
+    background-color: #d80700;
+    width:100%;
+}
+.drustvo-slike-v{
+    display:flex;
+    width:100%;
+    padding:0px 24px;
+    padding-right:0;
+    justify-content: space-between;
+}
+.sm-text h4{
+    font-size:17px;
+}
+.slika-v{
+    width:100%;
+    height:0;
+    
+    position: relative;
+    padding-top:calc(50%/(16/11)); 
+    
+}
+.sv-text{
+    width:95%;
+   position:static;
+  
+}
+
+.sv-text h4{
+    font-size:22px;
+}
+.sv-text p{
+    font-size:16px;
+}
+.slika-v img{
+    width:95%;
+    position:absolute;
+   bottom:0;
+}
+.drustvo-slike-m{
+    display: flex;
+    padding:10px 24px;
+}
+.drustvo-2 .slika-m{
+    flex:1;
+    
+    padding:7px 0;
+}
+.drustvo-2{
+    width:100%;
+    padding-right: 18px;
+}
+.slika-m{
+    display: flex;
+}
+.slika-m img{
+    width:150px;
+    height:85px;
+    margin-right:10px;
+}
+/*===========================drugipisuu*/
+.drugi-pisu{
+    display: flex;
+    flex-direction:column;
+    padding:50px 24px;
+}
+.drugi-iznad{
+    display:flex;
+    align-items: center;
+}
+.drugi-iznad h3{
+    color:#d80700;
+    padding-right:10px;
+    white-space:nowrap;
+}
+.drugi-iznad .crta{
+    height:4px;
+    width:100%;
+    background-color: #d80700;
+}
+.drugi-slike{
+    display: flex;
+   width:100%;
+   flex-wrap:wrap;
+}
+
+.drugi-slike .dp{
+    width:19%;
+    background-image:url(https://borba.me/wp-content/uploads/2017/12/medenica.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin:0 0.5%;
+    
+    height:0;
+    position: relative;
+    padding-top:calc(30%/(16/9));
+
+}
+.dp .gore{
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+.dp .dolje{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+.dp .gore h5{
+    color:white;
+    background-color: #d80700;
+    padding:5px;
+   
+}
+.dp .dolje h5{
+    background-color: white;
+    
+    font-size:14px;
+    padding:5px;
+}
+@media(max-width:990px){
+    .drugi-slike .dp{
+        min-width: 30%;
+        padding-top:calc(60%/(16/9));
+    }
+    .drugi-slike .dp h5{
+        font-size: 20px;
+    }
+}
+@media(max-width:675px){
+    .drugi-slike .dp{
+        min-width: 48%;
+        padding-top:calc(80%/(16/9));
+    }
+    .drugi-slike .dp h5{
+        font-size: 22px;
+    }
+}
+@media(max-width:555px){
+    .drugi-slike .dp{
+        min-width: 100%;
+        padding-top:calc(100%/(16/9));
+    }
+    .drugi-slike .dp h5{
+        font-size: 25px;
+    }
+}
+
+/*=========================PLANETAAAAAAA*/
+.zadnja{
+    display: flex;
+    width: 1170px;
+}
+.planeta{
+    flex:2;
+    
+    display: flex;
+    flex-direction: column;
+}
+.planeta-iznad{
+    display: flex;
+    align-items: center;
+    padding:30px 24px;
+}
+.planeta-iznad h3{
+    color:#d80700;
+    padding:8px;
+}
+.planeta-iznad .crta{
+    background-color: #d80700;
+    height:4px;
+    width:100%;
+}
+.desno{
+    flex:1;
+}
+.planeta-slike{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    padding:0 24px;
+}
+.planeta-slike .ps{
+    width:33%;
+    overflow: hidden;
+    padding:0 15px;
+    height:350px;
+    position:relative;
+   padding-bottom:10px;
+    
+}
+.ps img{
+    height:73%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ps .gore{
+    position:absolute;
+    top:0;
+    left: 15px;
+}
+.ps .gore h4{
+    color:white;
+    padding:5px;
+    background-color: #d80700;
+    z-index:11;   
+}
+
+.ps .dolje h4{
+    color:black;
+    background-color: white;
+    padding:5px;
+    font-size:20px;
+}
+
+/*desno*/
+.desno{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding:20px;
+    padding-right:24px;
+    padding-top:30px;
+}
+.socijalne{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding:10px;
+    
+}
+.socijalne .iznad{
+    display: flex;
+    align-items: center;
+    padding:10px 10px;
+    padding-bottom: 0;;
+}
+.socijalne .iznad h4{
+    white-space: nowrap;
+    padding-right:5px;
+    font-size:20px;
+}
+.socijalne .iznad .crta{
+    height:4px;
+    width:100%;
+    background-color: #444444;
+}
+.mreze{
+    display: flex;
+    width:100%;
+    height:150px;
+}
+.fb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+.fb i{
+    font-size: 40px;
+    color:blue;
+}
+.tw i{
+    color:rgb(91, 180, 231);
+}
+/*-----*/
+.skorasnje{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding:10px 24px;
+    margin-top: 50px;
+}
+.skorasnje .iznad{
+    display: flex;
+    align-items: center;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.skorasnje .iznad h4{
+    white-space: nowrap;
+    padding-right:10px;
+    font-size: 20px;
+}
+.skorasnje .iznad .crta{
+    height:4px;
+    width:100%;
+    background-color:black;
+}
+.skorasnje img{
+    width:150px;
+    height:75px;
+}
+.mr{
+    display: flex;
+    padding-bottom:10px;
+}
+/*========*/
+.forma{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    background-color: #eee;
+    padding:10px 24px;
+}
+.forma-iznad{
+    display: flex;
+    align-items: center;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.forma-iznad h3{
+    white-space: nowrap;
+    padding-right:10px;
+    font-size: 20px;
+}
+.forma-iznad .crta{
+    height:4px;
+    width:100%;
+    background-color:black;
+}
+.forma-ispod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forma-ispod i{
+    font-size:80px;
+    padding-bottom: 10px;
+}
+.forma-ispod p{
+    font-size:18px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+.forma-ispod .src{
+    display: flex;
+}
+.src .obla{
+    height:40px;
+    border:1px grey solid;
+    border-top-left-radius:17px ;
+    border-bottom-left-radius:17px ;
+    padding-left: 10px;
+    border-right: none;
+   
+}
+.src button{
+    color:white;
+    padding:10px;
+    background-color: #d80700;
+    border:none;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+@media(max-width:1170px){
+    .zadnja{
+    width:100%;
+    }
+}
+@media(max-width:950px){
+    .desno{
+        display: none;
+    }
+}
+@media(max-width:720px){
+    .planeta-slike .ps{
+        width:50%;
+    }
+}
+@media(max-width:555px){
+    .planeta-slike .ps{
+        width:100%;
+    }
+    .planeta-slike .ps .dolje h4{
+        font-size:25px;
+    }
+    .planeta-slike .ps .gore h4{
+        font-size:20px;
+    }
+}
+
+/*=============MEDIAAA */
+
+
+.nav2{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height:fit-content;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: rgb(31, 16, 16);
+    z-index:999;
+    padding:10px 20px;
+}
+.nav2 img{
+    width:180px;
+    height:60px;
+}
+.nav2 i{
+    font-size:24px;
+    color:white;
+   
+}
+@media(max-width:740px){
+    .nav, .naslov{
+        display:none;
+    }
+    .nav2{
+        display:flex;
+    }
+}
+@media(max-width:950px){
+    .naslov-under{
+        flex-direction: column;
+    }
+}
+@media(max-width:690px){
+    .slike{
+        flex-direction:column;
+        padding:0 24px;
+        height:700px;
+    }
+    .slika-1{
+        flex:0.5;
+    }
+    .sadrzaj{
+        padding-top: 50px;
+    }
+    .naslovi{
+        flex-direction:column;
+    }
+    .naslovi .naslov-1{
+        width:100%;
+    }
+    .naslov-1 .naslov-head{
+        height:400px;
+    }
+    .naslovi .naslov-head a img{
+        width:100%;
+        height:70%;
+    }   
+    .naslov-under{
+        flex-direction: row;
+    }
+}
+@media(max-width:500px){
+    .drustvo-slike-v{
+        flex-direction: column;
+        padding-top:20%;
+        
+    }
+    .pad{
+        padding-top:0;
+    }
+    .pad-2{
+        padding-top:30%;
+    }
+    .drustvo-slike-m{
+        flex-direction: column;
+    }
+}
+@media(max-width:340px){
+    .naslov-under{
+        flex-direction: column;
+    }
+}

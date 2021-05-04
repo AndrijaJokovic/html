@@ -1,0 +1,240 @@
+*,body{
+    margin:0;
+    padding:0;
+    
+}
+/*______NAV_______*/
+.nav{
+    display:flex;
+    background-color: #be3144;
+    padding-right: 20px;
+    justify-content: flex-end;
+    position:fixed;
+    position:sticky;
+    top:0;
+    box-shadow: 0 4px 2px -2px black;
+}
+.nav ul{
+    display:flex;
+    list-style-type: none;
+    
+}
+.nav li{
+    padding:15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-size: 20px;
+}
+.nav li:hover{
+    background-color:#45567d;
+    cursor:pointer;
+}
+/*___________PRVI_________*/
+.prvi{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+text-align: center;
+}
+.veci{
+    font-size:50px;
+    font-weight:bold;
+    color:white;
+}
+.manji{
+    color:red;
+    font-style: italic;
+}
+
+
+/* __________________ */
+.sve{
+    display:flex;
+    flex-direction:column;
+}
+.sivo{
+    padding-top:50px;
+    background-color:#45567d;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+.naslov{
+    text-align: center;
+    color:white;
+    font-size:40px;
+    padding: 5px 20px;
+    border-bottom:white solid 1px;
+}
+.slike{
+   width:1000px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;
+}
+.jedan p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.slika{
+    width:100%;
+    height:85%;
+}
+
+.jedan{
+    margin:10px;
+    width:30%;
+    
+    background-color: #303841;
+    display:flex;
+    flex-direction:column;   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+.font{
+    font-size:16px;
+}
+.pic{
+    width:100%;
+    height:100%;
+}
+
+.jedan a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    width:100%;
+    height:100%;
+}
+.show{
+    background-color: #303841;
+    color:white;
+    text-decoration:none;
+    padding:5px 10px;
+    margin-bottom:30px;
+}
+.show:hover{
+    background-color:brown;
+}
+
+/*_______ contact _____ */
+
+.footer{
+    background-color: #303841;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom:#be3144 3px solid;
+    
+    height:80vh;
+}
+.footer ul{
+    display: flex;
+    list-style-type: none;
+}
+.footer li{
+    padding:5px 30px;
+}
+.footer li a{
+    color:white;
+    text-decoration: none;
+}
+
+.b{
+    color:white;
+}
+footer{
+    display: flex;
+    align-items:center;
+    font-size:18px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color: #303841 ;
+    color:white;
+    height:20vh;
+}
+.l{
+    flex:3;
+}
+.r{
+    flex:1;
+}
+
+
+@media(max-width:1100px){
+    .jedan{
+        width:45%;
+    }
+    .slike{
+        width:100%;
+    }
+    .footer{
+        text-align:center;
+    }
+    .footer ul{
+        flex-wrap:wrap;
+        justify-content: center;
+        
+    }
+    footer{
+        flex-wrap:wrap;
+        
+      
+    }
+   
+    
+    
+}
+@media(max-width:500px){
+    .jedan{
+        width:100%;
+        height:auto;
+    }
+    .slikaa{
+        width:100%;
+        height:100%;
+    }
+    
+    .slike{
+        width:100%;
+    }
+   
+     .nav{
+         justify-content: center;
+         padding:0;
+     }
+     .nav li{
+        width:30%;
+     }
+     .font{
+         font-size:13px;
+     }
+     .nas{
+         font-size:20px;
+     }
+     footer{
+        flex-direction:column;
+     }
+    }
